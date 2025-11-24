@@ -22,7 +22,15 @@ It injects payloads into URL parameters and checks if the server reflects them b
 
 ## Installation
 
+Clone the repository:
+
+```bash
+git clone https://github.com/mrohitmishra/reflected-xss-scanner.git
+cd reflected-xss-scanner
 pip install -r requirements.txt
+
+## Example:
+python scanner.py --url "https://test.com/search" --method GET --params "q=hello"
 
 ## Usage
 
@@ -36,14 +44,3 @@ python scanner.py --url "https://target.com/page.php" -p q --method GET
 --html       Output HTML report file  
 --timeout    Optional request timeout  
 --help       Show help
- ## How to Use
-
-Clone the repository:
-
-```bash
-git clone https://github.com/mrohitmishra/reflected-xss-scanner.git
-cd reflected-xss-scanner
-pip install -r requirements.txt
-
-## Example:
-python scanner.py --url "https://test.com/search" --method GET --params "q=hello"
